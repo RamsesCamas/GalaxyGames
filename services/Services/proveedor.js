@@ -17,19 +17,18 @@ var myConnection = mysql.createConnection(
          console.log("Conexión fallida \n Error: "+JSON.stringify(err, undefined,2))
  });
 
-const getEmpleado = (request,response)=>{
-    const {username} = request.body
-    console.log(username)
-    myConnection.query('SELECT * from Empleados where username = ?', [username]
+const getProveedor = (request,response)=>{
+    const {nombre} = request.body
+    myConnection.query('SELECT * from proveedor where  nombre = ?', [nombre]
     ,(err, result)=>{
         if(err) throw err;
         response.status(200).json(result)
     })
 }
-const createEmpleado = (request, response) => {
-    const { idEmpleado, nombre, apePaterno, apeMaterno,puesto,username,password } = request.body
-    myConnection.query('INSERT INTO Empleados VALUES  (?, ?,?,?,?,?,?)'
-    , [idEmpleado, nombre, apePaterno, apeMaterno,puesto,username,password], (error, result) => {
+const createProveedor = (request, response) => {
+    const { idProveedor, nombre} = request.body
+    myConnection.query('INSERT INTO productos VALUES  (?,?)'
+    , [idProveedor,nombre], (error, result) => {
         if (error) {
             console.log(error);
         }
@@ -37,21 +36,21 @@ const createEmpleado = (request, response) => {
     })
 }
 const getCount = (request,response)=>{
-    myConnection.query('select count(*) from Empleados', (err, result)=>{
+    myConnection.query('select count(*) from proveedor', (err, result)=>{
         if(err) throw err;
         response.status(200).json(result[0]);
     })
 }
-const deleteEmpleado = (request,response)=>{
-    const {username} = request.body;
-    connection.query('DELETE FROM Empleados WHERE username = ?', [username], (error, result) => {
+const deleteProveedor = (request,response)=>{
+    const {nombre} = request.body;
+    connection.query('DELETE FROM proveedor WHERE nombre = ?', [nombre], (error, result) => {
         if (error) throw error;
         response.status(20).json(result);
     })
 }
 module.exports = {
-    getEmpleado,
-    createEmpleado,
-    deleteEmpleado,
+    getProveedor,
+    createProveedor,
+    deleteProveedor,
     getCount
 }

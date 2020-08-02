@@ -17,19 +17,18 @@ var myConnection = mysql.createConnection(
          console.log("Conexión fallida \n Error: "+JSON.stringify(err, undefined,2))
  });
 
-const getEmpleado = (request,response)=>{
-    const {username} = request.body
-    console.log(username)
-    myConnection.query('SELECT * from Empleados where username = ?', [username]
+const getCategoria = (request,response)=>{
+    const {categoria} = request.body
+    myConnection.query('SELECT * from categoria where  categoria = ?', [categoria]
     ,(err, result)=>{
         if(err) throw err;
         response.status(200).json(result)
     })
 }
-const createEmpleado = (request, response) => {
-    const { idEmpleado, nombre, apePaterno, apeMaterno,puesto,username,password } = request.body
-    myConnection.query('INSERT INTO Empleados VALUES  (?, ?,?,?,?,?,?)'
-    , [idEmpleado, nombre, apePaterno, apeMaterno,puesto,username,password], (error, result) => {
+const createCategoria = (request, response) => {
+    const { idCategoria, categoria} = request.body
+    myConnection.query('INSERT INTO categoria VALUES (?,?)'
+    , [idCategoria, categoria], (error, result) => {
         if (error) {
             console.log(error);
         }
@@ -37,21 +36,21 @@ const createEmpleado = (request, response) => {
     })
 }
 const getCount = (request,response)=>{
-    myConnection.query('select count(*) from Empleados', (err, result)=>{
+    myConnection.query('select count(*) from categoria', (err, result)=>{
         if(err) throw err;
         response.status(200).json(result[0]);
     })
 }
-const deleteEmpleado = (request,response)=>{
-    const {username} = request.body;
-    connection.query('DELETE FROM Empleados WHERE username = ?', [username], (error, result) => {
+const deleteCategoria = (request,response)=>{
+    const {categoria} = request.body;
+    connection.query('DELETE FROM categoria WHERE categoria = ?', [categoria], (error, result) => {
         if (error) throw error;
         response.status(20).json(result);
     })
 }
 module.exports = {
-    getEmpleado,
-    createEmpleado,
-    deleteEmpleado,
+    getCategoria,
+    createCategoria,
+    deleteCategoria,
     getCount
 }
