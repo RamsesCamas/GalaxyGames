@@ -41,3 +41,13 @@ img.botonVender:hover{
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgba(255, 255, 255, 0.466);
 }
+.login{
+    text-align: right;
+}
+.login li{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    color: white;
+    padding: 0px 20px;
+}

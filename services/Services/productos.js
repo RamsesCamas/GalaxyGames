@@ -25,6 +25,14 @@ const getProducto = (request,response)=>{
         response.status(200).json(result)
     })
 }
+const getProductoID = (request,response)=>{
+    const {idProduct} = request.body
+    myConnection.query('SELECT * from productos where  idProduct = ?', [idProduct]
+    ,(err, result)=>{
+        if(err) throw err;
+        response.status(200).json(result)
+    })
+}
 const createProducto = (request, response) => {
     const { idProduct, Nombre, precio, cantidad,Proveedor_id,Categoria_id} = request.body
     myConnection.query('INSERT INTO productos VALUES  (?,?,?,?,?,?)'
@@ -33,12 +41,6 @@ const createProducto = (request, response) => {
             console.log(error);
         }
         response.status(200).json(result.rows)
-    })
-}
-const getCount = (request,response)=>{
-    myConnection.query('select count(*) from productos', (err, result)=>{
-        if(err) throw err;
-        response.status(200).json(result[0]);
     })
 }
 const deleteProducto = (request,response)=>{
@@ -52,5 +54,5 @@ module.exports = {
     getProducto,
     createProducto,
     deleteProducto,
-    getCount
+    getProductoID
 }

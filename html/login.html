@@ -9,24 +9,29 @@
 </head>
 
 <body>
-
+    <nav class="volver">
+        <ul>
+            <li id="volver">Regresar</li>
+        </ul>
+    </nav>
     <div class="login-box">
         <img class="logo" src="../resource/logo.png" alt="Logo GG">
+       
         <h1>LOGIN</h1>
-        <form>
+        <div>
             <!--USERNAME-->
             <label for="username"></label>
-            <input class="user" type="text" placeholder="Usuario">
+            <input class="user" type="text" placeholder="Usuario" id="username">
 
             <!--PASSWORD-->
             <label for="password"></label>
-            <input class="password" type="password" placeholder="Password">
-
-            <input class="ingresar" type="submit" value="INGRESAR">
-        </form>
+            <input class="password" type="password" placeholder="Password" id="password">
+            <label id="error" class="error"> </label>
+            <input class="ingresar" type="submit" value="INGRESAR" id="btnLogin">
+        </div>
 
     </div>
-
+    <script>require('../js/login.js')</script>
 </body>
 
 </html>

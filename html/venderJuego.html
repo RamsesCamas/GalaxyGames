@@ -12,32 +12,74 @@
 <body>
     <img src="../resource/logo.png" alt="" class="logo">
     <h1 class="titulo">Ingrese los datos del videojuego a vender</h1>
-    <form action="">
+    <div >
         <fieldset>
             <div class="formulario">
                 <label>
                     Ingresa el nombre del videojuego
-                    <input id = "nameGame" name="nameGame" placeholder="Nombre del videojuego" required>
-                </label>
-            </div>
-            <div class="formulario">
-                <label>
-                    Ingresa la categoria del videojuego
-                    <input id ="category" name= "category" placeholder="Categoria del videojuego" required>
+                    <input id = "nombreJuego" name="nameGame" placeholder="Nombre del videojuego" required>
                 </label>
             </div>
             <div class="formulario">
                 <label>
                     Ingresa la cantidad a vender
-                    <input id ="category" name= "cant" placeholder="Cantidad de juegos" required>
+                    <input id ="cantidad" name= "cant" placeholder="Cantidad de juegos" required>
+                </label>
+            </div>
+            <div class="formulario">
+                <label>
+                    Ingresa el NUMERO del proveedor del videojuego
+                    <input id = "proveedor" name="nameGame" placeholder="Nombre del proveedor" required>
+                </label>
+            </div>
+            <div class="formulario">
+                <label>
+                    Ingresa el NUMERO de la categoria del videojuego
+                    <input id ="categoria" name= "category" placeholder="Categoria del videojuego" required>
                 </label>
             </div>
         </fieldset>
         <div align="center">
-        <a href="./choose.html"><input type="button" value="Vender" id="sellGame" class="boton"></a>
+            <input type="button" value="Vender" class="boton" id="btnVender">
         </div>
-    </form>
-    <a href="./choose.html" class="goBack">Regresar</a>
+    </div>
+   <div style="text-align: right;">
+    <table style="width: 90%; color:white">
+        <tr>
+            <th>No.</th>
+            <th>Proveedor</th>
+            <th>Categoria</th>
+            <th>No. Categoria</th>
+        </tr>
+        <tr>
+            <th>1</th>
+            <th>343 Industries</th>
+            <th>Acción</th>
+            <th>1</th>
+        </tr>
+        <tr>
+            <th>3</th>
+            <th>Ubisoft</th>
+            <th>Aventura</th>
+            <th>2</th>
+        </tr>
+        <tr>
+            <th>4</th>
+            <th>Bandai Namco</th>
+            <th>FPS</th>
+            <th>4</th>
+        </tr>
+        <tr>
+            <th>9</th>
+            <th>Electronic Arts</th>
+            <th>Sandbox</th>
+            <th>5</th>
+        </tr>
+    </table>
+   </div>
+    <br><br><br><br>
+    <a href="./index.html" class="goBack">Regresar</a>
 </body>
+<script>require('../js/vender.js')</script>
 </html>
 

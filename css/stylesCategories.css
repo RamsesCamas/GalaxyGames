@@ -1,73 +1,58 @@
 body {
     background-image: url("../resource/fondoChica.png");
 }
-
 img.logo {
     position: relative;
     top: 0px;
     left: 480px;
     width: 400px;
     height: 250px;
-    opacity: .8;
+    opacity: .7;
 }
-
-h1 {
+.titulo{
     text-align: center;
-    color: rgb(92, 92, 92);
     font-family: 'Press Start 2P', cursive;
-    font-size: 50px;
-    border-color: black;
+    font-size: 40px;
+    -webkit-text-fill-color: rgb(32, 32, 32);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
 }
 
-img.imagen1 {
-    position: relative;
-    left: 230px;
-    width: 150px;
-    height: 80px;
+.formulario{
+    text-align: center;
+    color: aliceblue;
+    font-size: 20px;
+    font-family: 'Press Start 2P', cursive;
 }
 
-img.imagen2 {
-    position: relative;
-    bottom: -100px;
-    left: 250px;
-    width: 150px;
-    height: 80px;
+input:hover{
+    background-color: #d0df05ea;
 }
 
-img.imagen3 {
-    position: relative;
-    left: 300px;
-    width: 150px;
-    height: 80px;
+.boton{
+    font-size:15px;
+    font-family: 'Press Start 2P', cursive;
+    font-weight:bold;
+    background:#d0df05ea;
+    border:0px;
+    width:120px;
+    height:45px;
+    -webkit-text-fill-color: rgb(255, 255, 255);
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: black;
 }
-
-img.imagen4 {
-    position: relative;
-    bottom: -100px;
-    left: 330px;
-    width: 150px;
-    height: 80px;
-}
-
-img.imagen5 {
-    position: relative;
-    left: 350px;
-    width: 150px;
-    height: 80px;
-}
-
-img.imagen1:hover{
+.boton:hover{
     background-color: rgb(44, 44, 44);
 }
-img.imagen2:hover{
-    background-color: rgb(44, 44, 44);
+
+.goBack{
+    font-size: 25px;
+    font-family: 'Press Start 2P', cursive;
+    -webkit-text-fill-color: rgb(255, 255, 255);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
-img.imagen3:hover{
-    background-color: rgb(44, 44, 44);
-}
-img.imagen4:hover{
-    background-color: rgb(44, 44, 44);
-}
-img.imagen5:hover{
+
+.goBack:hover{
     background-color: rgb(44, 44, 44);
 }

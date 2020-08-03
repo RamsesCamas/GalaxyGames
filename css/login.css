@@ -3,7 +3,22 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
-
+.volver{
+    text-align: left;
+}
+.volver li{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    color: white;
+    padding: 0px 20px;
+}
+.error {
+    margin: 0;
+    padding: 0;
+    color: white;
+    display: block;
+}
 .login-box {
     width: 300px;
     height: 400px;

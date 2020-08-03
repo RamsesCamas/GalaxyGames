@@ -11,15 +11,29 @@
 </head>
 
 <body>
-    <img class="logo" src="../resource/logo.png" alt="">
-    <h1>Categorias</h1>
-    <div class="imagen">
-    <a href=""><img class="imagen1" src="../resource/xd (1).png" alt=""></a>
-    <a href=""><img class="imagen2" src="../resource/xd (2).png" alt=""></a>
-    <a href=""><img class="imagen3" src="../resource/xd (3).png" alt=""></a>
-    <a href=""><img class="imagen4" src="../resource/xd (4).png" alt=""></a>
-    <a href=""><img class="imagen5" src="../resource/xd (5).png" alt=""></a>
+    <img src="../resource/logo.png" alt="" class="logo">
+    <h1 class="titulo">Agregar categoria</h1>
+    <div >
+        <fieldset>
+            <div class="formulario">
+                <label>
+                    Ingresa el número para la categoria
+                    <input id ="num" name= "cant" placeholder="Número de categoría" required>
+                </label>
+            </div>
+            <div class="formulario">
+                <label>
+                    Ingresa el nombre de la categoria
+                    <input id = "name" name="nameGame" placeholder="Nombre de la categoría" required>
+                </label>
+            </div>
+        </fieldset>
+        <div align="center">
+            <input type="button" value="Agregar" class="boton" id="btnAdd">
+        </div>
     </div>
+    <a href="./index.html" class="goBack">Regresar</a>
 </body>
+<script>require('../js/addCat.js')</script>
 
 </html>
