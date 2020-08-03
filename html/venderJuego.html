@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcuut icon" href="../resource/logo.png">
+    <link rel="stylesheet" href="../css/styleVenderJuego.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <title>GalaxyGames</title>
+</head>
+<body>
+    <img src="../resource/logo.png" alt="" class="logo">
+    <h1 class="titulo">Ingrese los datos del videojuego a vender</h1>
+    <form action="">
+        <fieldset>
+            <div class="formulario">
+                <label>
+                    Ingresa el nombre del videojuego
+                    <input id = "nameGame" name="nameGame" placeholder="Nombre del videojuego" required>
+                </label>
+            </div>
+            <div class="formulario">
+                <label>
+                    Ingresa la categoria del videojuego
+                    <input id ="category" name= "category" placeholder="Categoria del videojuego" required>
+                </label>
+            </div>
+            <div class="formulario">
+                <label>
+                    Ingresa la cantidad a vender
+                    <input id ="category" name= "cant" placeholder="Cantidad de juegos" required>
+                </label>
+            </div>
+        </fieldset>
+        <div align="center">
+        <a href="./choose.html"><input type="button" value="Vender" id="sellGame" class="boton"></a>
+        </div>
+    </form>
+    <a href="./choose.html" class="goBack">Regresar</a>
+</body>
+</html>
+

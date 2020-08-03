@@ -1,0 +1,30 @@
+body {
+    background-image: url("../resource/fondoCategoris.jpg");
+    background-size: cover;
+}
+
+img.logo {
+    position: relative;
+    top: 0px;
+    width: 90px;
+    height: 70px;
+    opacity: .8;
+    
+}
+.titulo{
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 50px;
+    -webkit-text-fill-color: rgb(255, 255, 255);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(54, 53, 53);
+    opacity: .91;
+}
+
+img.imagenJuego{
+    position: relative;
+    top: 0px;
+    left: 400px;  
+    border:3px solid rgb(255, 255, 255);
+    opacity: .7;
+}

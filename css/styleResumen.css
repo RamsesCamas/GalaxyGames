@@ -1,0 +1,53 @@
+body {
+    background-image: url("../resource/fondoMar.jpg");
+    background-size: cover;
+}
+
+img.logo {
+    position: relative;
+    top: 0px;
+    width: 90px;
+    height: 70px;
+    opacity: .8;
+}
+
+.titulo {
+    text-align: center;
+    color: #FFFF;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 60px;
+    -webkit-text-fill-color: rgb(255, 255, 255);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(61, 61, 61);    
+}
+.table{
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid rgb(247, 247, 247);
+}
+
+th, td {
+    width: 17%;
+    text-align: center;
+    vertical-align: top;
+    border: 1px solid rgb(255, 255, 255);
+    border-spacing: 0;  
+    font-family: 'Press Start 2P', cursive;
+    -webkit-text-fill-color: rgb(255, 255, 255);
+    -webkit-text-stroke-width: .3px;
+    -webkit-text-stroke-color: black;
+ }
+.table thead{
+    color: aliceblue;
+}
+
+.botonComprar{
+    position: relative;
+    top: 0px;
+    left: 1150px;    
+    height: 77px;
+}
+
+.botonComprar:hover{
+    background-color: rgb(44, 44, 44);
+}

@@ -1,0 +1,73 @@
+body {
+    background-image: url("../resource/fondoChica.png");
+}
+
+img.logo {
+    position: relative;
+    top: 0px;
+    left: 480px;
+    width: 400px;
+    height: 250px;
+    opacity: .8;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(92, 92, 92);
+    font-family: 'Press Start 2P', cursive;
+    font-size: 50px;
+    border-color: black;
+}
+
+img.imagen1 {
+    position: relative;
+    left: 230px;
+    width: 150px;
+    height: 80px;
+}
+
+img.imagen2 {
+    position: relative;
+    bottom: -100px;
+    left: 250px;
+    width: 150px;
+    height: 80px;
+}
+
+img.imagen3 {
+    position: relative;
+    left: 300px;
+    width: 150px;
+    height: 80px;
+}
+
+img.imagen4 {
+    position: relative;
+    bottom: -100px;
+    left: 330px;
+    width: 150px;
+    height: 80px;
+}
+
+img.imagen5 {
+    position: relative;
+    left: 350px;
+    width: 150px;
+    height: 80px;
+}
+
+img.imagen1:hover{
+    background-color: rgb(44, 44, 44);
+}
+img.imagen2:hover{
+    background-color: rgb(44, 44, 44);
+}
+img.imagen3:hover{
+    background-color: rgb(44, 44, 44);
+}
+img.imagen4:hover{
+    background-color: rgb(44, 44, 44);
+}
+img.imagen5:hover{
+    background-color: rgb(44, 44, 44);
+}
