@@ -1,16 +1,16 @@
-const {app, BrowserWindow} = require('electron');
+const { app, BrowserWindow } = require('electron');
 let win;
 
-function createWindow(){
+function createWindow() {
     win = new BrowserWindow({});
     win.maximize();
     win.loadFile("./html/index.html");
     win.resizable = false;
     webPreferences: {
-        nodeIntegration: true
-        //enableRemoteModule: true,
-         }
-    //win.webContents.openDevTools();
+            nodeIntegration: true
+                //enableRemoteModule: true,
+        }
+        //win.webContents.openDevTools();
 }
 /*
 const options = {
@@ -40,4 +40,4 @@ request.on('response', (response) => {
         });
     });*/
 
-app.on("ready",createWindow);
+app.on("ready", createWindow);
